@@ -3,7 +3,7 @@ import TaskItem from './task-item'
 
 class Tasks extends Component {
   items() {
-    return this.props.tasks.map(task => <TaskItem key={task} task={task} />)
+    return this.props.tasks.map(task => <TaskItem key={task} task={task} setTask={this.props.setTask} />)
   }
 
   render() {
